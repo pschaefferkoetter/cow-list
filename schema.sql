@@ -1,6 +1,13 @@
--- ATTN WINDOWS USERS: Some of you might have an easier time just copying and pasting the lines below in to your mysql shell
+DROP DATABASE IF EXISTS cowsdb;
 
--- YOUR CODE GOES HERE
--- CREATE YOUR DATABASE
--- CREATE YOUR TABLES
--- ADD RECORDS TO YOUR TABLE
+CREATE DATABASE cowsdb;
+
+USE cowsdb;
+
+CREATE TABLE cows (
+  id int not null auto_increment,
+  name varchar(200) not null,
+  description varchar(200) not null,
+  primary key (id)
+);
+
